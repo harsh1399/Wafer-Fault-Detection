@@ -48,7 +48,7 @@ In this step, we perform different sets of validation on the given set of traini
 4) Model Selection - After clusters are created, we find the best model for each cluster. We are using two algorithms, "Random Forest" and "XGBoost". For each cluster, both the algorithms are passed with the best parameters derived from GridSearch. We calculate the AUC scores for both models and select the model with the best score. Similarly, the model is selected for each cluster. All the models for every cluster are saved for use in prediction.
 
 ### Prediction - 
-KMeans model created during training is loaded, and clusters for the preprocessed prediction data is predicted. Based on the cluster number, the respective model is loaded and is used to predict the data for that cluster.
+KMeans model created during training is loaded, and clusters for the preprocessed prediction data is predicted. Based on the cluster number, the respective model is loaded and is used to predict the data for that cluster. The csv file created for prediction tells the probability of being a faulty wafer.
 
 ### How to run - 
 
